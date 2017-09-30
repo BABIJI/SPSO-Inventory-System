@@ -3,6 +3,13 @@
 <head>
 <?php header('Cache-Control: no-cache, must-revalidate');?>
 <style>
+
+#pa {
+    background-image: url("../images/UPVTC_Logo_200x196.png");
+    background-repeat: no-repeat;
+	background-position: center top;
+}
+
 .container {	
     overflow: hidden;
     background-color: maroon;
@@ -64,19 +71,27 @@
     display: block;
 }
 </style>
+
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
+
 </head>
 <body style = "margin:0;padding:0;">
 
 <div class="container">
   <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction()">Profile</button>
+    <button class="dropbtn" onclick="myFunction()">Profile&#x25BC;</button>
     <div class="dropdown-content" id="myDropdown">
-      <a href="#">Settings</a>
-      <a href="/Log_In.html">Log out</a>
+		<a href="#home">Home</a>
+		<a href="#">Settings</a>
+		<a href="../Log_In.html">Log out</a>
     </div>
   </div> 
-  <a href="#home">Home</a>
-  <a href="#news">Request Status</a>
+  <a href="#news">RIS Status</a>
+  <a href="#request">Request Supplies</a>
 </div>
 
 <script>
@@ -97,8 +112,12 @@ window.onclick = function(e) {
 }
 </script>
 
-
-
+<section style = "text-align:center">
+	<iframe src="Home.html" name = "Base_A" frameborder="0" scrolling="yes" width = 100% onload="resizeIframe(this)"></iframe>
+</section>
+<footer style = "text-align: center;color:maroon">
+<p>&#169;All rights Reserved 2017
+</footer>
 
 </body>
 </html>
