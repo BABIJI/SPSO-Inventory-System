@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<?php header('Cache-Control: no-cache, must-revalidate');?>
+		<style>
+
+			#pa {
+				background-image: url("../images/UPVTC_Logo_200x196.png");
+				background-repeat: no-repeat;
+				background-position: center top;
+			}
+
+			.container {	
+				padding: 0px 0px 0px 1018.5px;
+				overflow: hidden;
+				background-color: black;
+				font-family: Century Gothic;	
+			}
+
+			.container a {
+				float: right;
+				font-size: 16px;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+
+
+			.container a:hover, .dropdown:hover .dropbtn {
+    			background-color: green;
+			}
+
+			.button {
+				background-color: rgba(0, 0, 0, 0.8); 
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				font-family: Century Gothic;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 25px;
+				margin: 4px 2px;
+				cursor: pointer;
+				width: 300px;
+				height: 70px;
+			}
+			
+			.button:hover {
+				background-color: rgba(10, 10, 10, 0.8);
+			}
+			
+			.block{
+				margin-top: 350px;
+				width: 300px;
+				margin-left: auto ;
+				margin-right: auto ;
+			}
+			
+			.h1{
+				font-family: Roboto Thin;
+				font-weight: normal;
+				font-size:150px;
+				text-align: center;
+				color: white;
+				position:absolute;
+				top: 0px;
+			}
+			
+			.block2{
+				top: 150px;
+				width: 1000px;
+				margin-left: auto ;
+				margin-right: auto ;
+			}
+			
+		</style>
+
+		
+	</head>
+		
+	<body style = "margin:0;padding:0;">
+	
+	
+		<iframe src="Home.html" name = "Base_A" frameborder="0" scrolling="no" width = 100% height = 100%  style = "position:absolute; 
+				top:0px">
+		</iframe>
+		
+		
+		<div class = "block2">
+			<h1 class = "h1">
+				Welcome, user!
+			</h1>
+		</div>
+		
+		<div class="container" style = "position:absolute; top: 0px">
+			<a href="../Log_In.html">Log out</a>
+			<a href="#news">Contact</a>
+			<a href="#request">About</a>
+			<a href="#request">Home</a>
+		</div>
+		<div class = "block">
+			<button class="button button2 " style = "position: relative;">Follow-up Order</button><br>
+			<button class="button button3" style = "position: relative">Request Supplies</button>
+			<button class="button button3" style = "position: relative">RIS Feedback</button>
+		</div>
+		<p style = "color: black; position: absolute; top: 615px; left: 600px" >&#169;All rights Reserved 2017 </p>
+			
+
+	</body>
+</html>

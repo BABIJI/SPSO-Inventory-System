@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			table{
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+				width: 750px;
+				white-space:nowrap;
+				
+			}
+			
+			td, th{
+				border: 2px solid maroon;
+				text-align: center;
+				padding: 8px;
+			}
+
+			tr:nth-child(even) {
+				background-color: #eee;
+			}
+			
+			section{
+			}
+			
+			#a{
+				rowspan = "2";
+			}
+			
+			.arrowheadLeft{
+				align:left;
+			}
+			
+			.arrowheadRight{
+				align:right;
+			}
+		</style>
+	</head>
+	<body>
+		<?php
+		echo'<table align = "center">';
+		?>
+			<col width="50">
+			<col width="50">
+			<col width="400">
+			<col width="100">	
+			<tr>
+				<th id = "a">Stock No.</th>
+				<th id = "a">Unit</th>
+				<th id = "a">Description</th>
+				<th id = "a">Qty</th>
+			</tr>
+			<!--<tr style = "background-color: white;">
+				<th>Unit Cost</th>
+				<th>Total Cost</th>
+			</tr>-->
+			<tr>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				<td><button type="button">&lArr;</button> 0 <button type="button">&rArr;</button></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+				
+		</table>
+	</body>
+</head>

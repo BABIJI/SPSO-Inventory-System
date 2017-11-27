@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<?php header('Cache-Control: no-cache, must-revalidate');?>
+		<style>
+			#pa {
+				background-image: url("../images/UPVTC_Logo_200x196.png");
+				background-repeat: no-repeat;
+				background-position: center top;
+			}
+			.container {	
+				overflow: hidden;
+				background-color: maroon;
+				font-family: Arial;	
+			}
+			.container a {
+				float: right;
+				font-size: 16px;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			.dropdown {
+    			float: right;
+    			overflow: hidden;
+			}
+			.dropdown .dropbtn {
+    			cursor: pointer;
+    			font-size: 16px;    
+    			border: none;
+    			outline: none;
+    			color: white;
+    			padding: 14px 25px;
+    			background-color: inherit;
+			}
+			.container a:hover, .dropdown:hover .dropbtn {
+    			background-color: green;
+			}
+			.dropdown-content {
+    			display: none;
+    			position: absolute;
+    			background-color: #f9f9f9;
+    			min-width: 160px;
+    			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    			z-index: 1;
+			}
+			.dropdown-content a {
+    			float: none;
+    			color: black;
+    			padding: 12px 16px;
+    			text-decoration: none;
+    			display: block;
+    			text-align: left;
+			}
+			.dropdown-content a:hover {
+    			background-color: #ddd;
+			}
+			.show {
+    			display: block;
+			}
+			
+			.button {
+				width: 20%;
+				table-layout: fixed;
+				border-collapse: collapse;
+				background-color: maroon;
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+			}
+			
+			@font-face {
+				font-family: 'Material Icons';
+				font-style: normal;
+				font-weight: 400;
+				src: url(https://fonts.gstatic.com/s/materialicons/v30/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+			}
+
+			.material-icons {
+				font-family: 'Material Icons';
+				font-weight: normal;
+				font-style: normal;
+				font-size: 24px;
+				line-height: 1;
+				letter-spacing: normal;
+				text-transform: none;
+				display: inline-block;
+				white-space: nowrap;
+				word-wrap: normal;
+				direction: ltr;
+				-webkit-font-feature-settings: 'liga';
+				-webkit-font-smoothing: antialiased;
+			}
+			
+		</style>
+
+		<script>
+			function resizeIframe(obj) {
+				obj.style.height = 0;
+    			obj.style.height = obj.contentWindow.document.body.scrollHeight + 100 + 'px';
+  			}
+		</script>
+
+	</head>
+		
+	<body style = "margin:0;padding:0;">
+
+		<div class="container">
+			<div class="dropdown">
+				<a href="Officer_Menu.html"><button class="dropbtn" onclick="myFunction()"><i class="material-icons">menu</i></button></a>
+			</div> 
+		</div>
+
+		<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+    		document.getElementById("myDropdown").classList.toggle("show");
+		}
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(e) {
+			if (!e.target.matches('.dropbtn')) {
+				var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+					myDropdown.classList.remove('show');
+				}
+			}
+		}
+		</script>
+
+		<iframe style =  "margin: 0; padding :0;"
+			src="/127/client/Home.html" name = "Base_A" frameborder="0" scrolling="yes" width = 100% onload="resizeIframe(this)">
+		</iframe>
+		
+		<div style="text-align:center;">
+			<a href="exa.php"><button class="button">Add Supplies</button></a>
+		</div>
+		
+		<footer style = "text-align: center;color:maroon">
+			<p>&#169;All rights Reserved 2017
+		</footer>	
+
+	</body>
+</html>
