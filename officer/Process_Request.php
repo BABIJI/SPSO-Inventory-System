@@ -96,7 +96,7 @@
 						echo "Failed to connect to MySQL: " . mysqli_connect_error();
 					}
 					mysqli_select_db($db, "spso");
-					$result = mysqli_query($db, "SELECT * FROM ris ORDER BY RIS_no DESC;");
+					$result = mysqli_query($db, "SELECT * FROM ris;");
 					$x = 0;
 					while($myrow = mysqli_fetch_array($result))
 					{
